@@ -5,6 +5,23 @@
  */
 
 function sleep(milliseconds) {
+    let p = new Promise(function(resolve){
+    let startTime = Date.now();
+    let currentTime = startTime+milliseconds;
+    while(currentTime>=startTime){
+        startTime = Date.now();
+        // console.log("Busy for some seconds")
+
+    }
+    
+        
+    })
 }
 
-module.exports = sleep;
+// module.exports = sleep;
+console.log("I can wait")
+sleep(2000);
+console.log("plz don't make me to wait")
+
+
+
